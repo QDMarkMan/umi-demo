@@ -7,7 +7,8 @@ export default defineConfig({
   routes: [
     { path: '/', component: '@/pages/index' },
     { path: '/table', component: '@/pages/table/index' },
-    { path: '/hooks', component: '@/pages/hooks/index' }
+    { path: '/hooks', component: '@/pages/hooks/index' },
+    { path: '/demo', component: '@/pages/demo/index' },
   ],
   fastRefresh: {},
 });
