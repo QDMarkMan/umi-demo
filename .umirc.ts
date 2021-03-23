@@ -1,6 +1,10 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  plugins: [
+    // '@umijs/plugin-initial-state'
+    // '@umijs/plugin-access'
+  ],
   nodeModulesTransform: {
     type: 'none',
   },
@@ -11,4 +15,7 @@ export default defineConfig({
     { path: '/demo', component: '@/pages/demo/index' },
   ],
   fastRefresh: {},
+  dynamicImport: {
+    loading: '@/components/PageLoading',
+  },
 });
