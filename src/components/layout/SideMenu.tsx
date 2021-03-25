@@ -1,5 +1,12 @@
 import React from 'react';
 
 export default (): React.ReactElement => {
-  return <div className="App-side-menu">menu</div>;
+  const style = {
+    width: '100px',
+  };
+  return (
+    <div className="App-side-menu" style={style}>
+      menu
+    </div>
+  );
 };
