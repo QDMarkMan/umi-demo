@@ -9,6 +9,7 @@ interface IAccessState {
 
 export default function (initialState: IAccessState) {
   const { token } = initialState;
+  console.log('token');
   return {
     isLogin: () => token != '',
   };
